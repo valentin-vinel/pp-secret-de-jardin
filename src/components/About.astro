@@ -1,0 +1,121 @@
+---
+---
+
+<section class="about reveal" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__text">
+        <span class="section-label">À propos</span>
+        <h2 class="section-title" id="about-title">L'artisan derrière votre jardin</h2>
+        <p class="about__desc">
+          Secret de Jardin, c'est une équipe de passionnés du végétal au service des particuliers et professionnels de la Drôme Provençale. Chaque espace extérieur est traité avec le soin qu'il mérite, dans le respect de l'environnement et de vos attentes.
+        </p>
+        <p class="about__desc">
+          Du simple entretien régulier à l'aménagement complet d'un jardin, nous mettons notre savoir-faire artisanal à votre service pour créer des extérieurs qui vous ressemblent.
+        </p>
+      </div>
+      <div class="about__stats" aria-label="Chiffres clés">
+        <div class="about__stat">
+          <strong class="about__stat-number">13+</strong>
+          <span class="about__stat-label">ans d'expérience</span>
+        </div>
+        <div class="about__stat">
+          <strong class="about__stat-number">200+</strong>
+          <span class="about__stat-label">projets réalisés</span>
+        </div>
+        <div class="about__stat">
+          <strong class="about__stat-number">100%</strong>
+          <span class="about__stat-label">devis gratuit</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    background-color: var(--color-bg);
+    padding: calc(var(--space-xl) + 60px) 0 var(--space-xl);
+    position: relative;
+  }
+
+  .about__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .about__text .section-title {
+    margin: var(--space-xs) 0 var(--space-md);
+  }
+
+  .about__desc {
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: var(--space-sm);
+  }
+
+  .about__desc:last-child {
+    margin-bottom: 0;
+  }
+
+  .about__stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .about__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-md) var(--space-sm);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    border-top: 3px solid var(--color-accent);
+    box-shadow: var(--shadow);
+  }
+
+  .about__stat-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: 0.35rem;
+  }
+
+  .about__stat-label {
+    font-size: var(--fs-small);
+    font-weight: 400;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  @media (min-width: 480px) {
+    .about__stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .about__inner {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: var(--space-xxl);
+    }
+
+    .about__text {
+      flex: 1;
+    }
+
+    .about__stats {
+      flex: 0 0 320px;
+      grid-template-columns: 1fr;
+      align-self: center;
+    }
+  }
+</style>

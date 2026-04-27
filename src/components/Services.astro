@@ -1,0 +1,172 @@
+---
+---
+
+<section class="services reveal" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="services__header">
+      <span class="section-label">Nos prestations</span>
+      <h2 class="section-title" id="services-title">Ce que nous faisons pour vous</h2>
+      <p class="services__intro">Des interventions adaptées à chaque jardin, réalisées avec les bons outils et le bon savoir-faire.</p>
+    </div>
+    <ul class="services__grid" role="list">
+      <li class="service-card">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" width="32" height="32">
+            <path d="M12 22V14M12 14C12 14 5 10 3 3C9 3 15 7 16 14M12 14C12 14 15 8 21 5C22 13 17 19 12 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Jardinage</h3>
+        <p class="service-card__desc">Taille de haies, tonte, désherbage et entretien de massifs floraux. Votre jardin reste beau en toute saison.</p>
+      </li>
+      <li class="service-card">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" width="32" height="32">
+            <circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Débroussaillage mécanique</h3>
+        <p class="service-card__desc">Nettoyage de terrains envahis, zones DFCI et abords de propriété. Intervention rapide sur tous types de surfaces.</p>
+      </li>
+      <li class="service-card">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" width="32" height="32">
+            <path d="M12 2C12 2 7 8 7 13C7 15.76 9.24 18 12 18C14.76 18 17 15.76 17 13C17 8 12 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 20H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M9 22H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 10L2 12M19 10L22 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Nettoyage haute pression</h3>
+        <p class="service-card__desc">Remise en état des allées, terrasses et escaliers. Résultat garanti pour des surfaces impeccables.</p>
+      </li>
+      <li class="service-card">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" width="32" height="32">
+            <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Dallage</h3>
+        <p class="service-card__desc">Pose de dalles et pavés, création de terrasses et allées piétonnes. Un aménagement solide et esthétique qui dure.</p>
+      </li>
+      <li class="service-card">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" width="32" height="32">
+            <path d="M5 11V6C5 5.45 5.45 5 6 5H18C18.55 5 19 5.45 19 6V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3 11H21C21.55 11 22 11.45 22 12V14C22 14.55 21.55 15 21 15H3C2.45 15 2 14.55 2 14V12C2 11.45 2.45 11 3 11Z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M5 15V20M19 15V20M7 20H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Mobiliers de jardin</h3>
+        <p class="service-card__desc">Conseil, fourniture et installation de mobiliers extérieurs, pergolas et structures d'ombrage adaptées à votre espace.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  .services {
+    background-color: var(--color-white);
+    padding: var(--space-xl) 0;
+  }
+
+  .services__header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+  }
+
+  .services__header .section-title {
+    margin: var(--space-xs) 0 var(--space-sm);
+  }
+
+  .services__intro {
+    color: var(--color-text-light);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .services__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .service-card {
+    background: var(--color-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg) var(--space-md);
+    border-left: 4px solid var(--color-primary-light);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--color-accent);
+  }
+
+  .service-card__icon {
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+    transition: background-color var(--transition);
+  }
+
+  .service-card:hover .service-card__icon {
+    background-color: var(--color-accent);
+  }
+
+  .service-card__title {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h3);
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-xs);
+    line-height: 1.2;
+  }
+
+  .service-card__desc {
+    font-size: var(--fs-small);
+    color: var(--color-text-light);
+    line-height: 1.7;
+  }
+
+  @media (min-width: 768px) {
+    .services__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .services {
+      padding: var(--space-xxl) 0;
+    }
+
+    .services__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services__grid li:nth-child(4),
+    .services__grid li:nth-child(5) {
+      grid-column: span 1;
+    }
+
+    .services__grid li:nth-child(4) {
+      grid-column: 1 / 2;
+    }
+
+    .services__grid li:nth-child(5) {
+      grid-column: 2 / 3;
+    }
+  }
+</style>

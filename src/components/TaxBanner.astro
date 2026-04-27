@@ -1,0 +1,116 @@
+---
+---
+
+<div class="tax-banner" role="note" aria-label="Avantage fiscal emploi à domicile">
+  <div class="container tax-banner__inner">
+    <div class="tax-banner__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <p class="tax-banner__text">
+      <strong>Jusqu'à 50% remboursés par l'État</strong>
+      <br />
+      <span class="tax-banner__sub">Vos travaux d'entretien de jardin sont éligibles au crédit d'impôt emploi à domicile.</span>
+    </p>
+    <div class="tax-banner__badge" aria-hidden="true">
+      <span>50%</span>
+      <span>crédit d'impôt</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tax-banner {
+    background: linear-gradient(135deg, #b18739 0%, var(--color-accent) 50%, #D4A43A 100%);
+    color: var(--color-white);
+    padding: var(--space-md) 0;
+  }
+
+  .tax-banner__inner {
+    display: row;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tax-banner__icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .tax-banner__text {
+    font-size: var(--fs-small);
+    line-height: 1.5;
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .tax-banner__text strong {
+    font-size: 1.1rem;
+    display: block;
+  }
+
+  .tax-banner__sub {
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .tax-banner__badge {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: var(--radius);
+    padding: 0.4rem 0.9rem;
+    line-height: 1.2;
+  }
+
+  .tax-banner__badge span:first-child {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .tax-banner__badge span:last-child {
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.85;
+  }
+
+  @media (min-width: 768px) {
+    .tax-banner__inner {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tax-banner__icon {
+      margin: 0;
+    }
+
+    .tax-banner__text {
+      margin-bottom: 0;
+    }
+
+    .tax-banner__text strong {
+      display: inline;
+    }
+  }
+</style>

@@ -1,0 +1,235 @@
+---
+---
+
+<section class="contact reveal" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact__header">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title" id="contact-title">Parlons de votre projet</h2>
+      <p class="contact__intro">Un devis gratuit, une question ? Appelez-nous directement.</p>
+    </div>
+    <div class="contact__grid">
+      <div class="contact__info">
+        <div class="contact__cta-block">
+          <a href="tel:0607526848" class="btn btn--phone" aria-label="Appeler le 06 07 52 68 48">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            06 07 52 68 48
+          </a>
+          <p class="contact__cta-note">Devis gratuit · Réponse rapide</p>
+        </div>
+        <ul class="contact__details" role="list">
+          <li class="contact__detail">
+            <div class="contact__detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <strong class="contact__detail-label">Adresse</strong>
+              <address class="contact__detail-value">
+                26790 Rochegude
+              </address>
+            </div>
+          </li>
+          <li class="contact__detail">
+            <div class="contact__detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong class="contact__detail-label">Horaires</strong>
+              <div class="contact__detail-value">
+                <table class="contact__hours" aria-label="Horaires d'ouverture">
+                  <tbody>
+                    <tr>
+                      <td>Lundi → Vendredi</td>
+                      <td>08:00 – 19:00</td>
+                    </tr>
+                    <tr>
+                      <td>Samedi & Dimanche</td>
+                      <td>Fermé</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="contact__map">
+        <iframe
+          src="https://maps.google.com/maps?q=244+rue+Basse%2C+26790+Rochegude%2C+France&output=embed&z=15&hl=fr"
+          title="Localisation Secret de Jardin — 244 rue Basse, 26790 Rochegude"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact {
+    background-color: var(--color-bg);
+    padding: calc(var(--space-xl) + 40px) 0 var(--space-xl);
+  }
+
+  .contact__header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+  }
+
+  .contact__header .section-title {
+    margin: var(--space-xs) 0 var(--space-sm);
+  }
+
+  .contact__intro {
+    color: var(--color-text-light);
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .contact__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .contact__cta-block {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--color-bg-dark);
+  }
+
+  .btn--phone {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+    font-size: 1.15rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    justify-content: center;
+    transition: background-color var(--transition), transform var(--transition);
+  }
+
+  .btn--phone:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+  }
+
+  .contact__cta-note {
+    font-size: var(--fs-xs);
+    color: var(--color-text-light);
+    margin-top: var(--space-xs);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .contact__details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .contact__detail {
+    display: flex;
+    gap: var(--space-sm);
+    align-items: flex-start;
+  }
+
+  .contact__detail-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+  }
+
+  .contact__detail-label {
+    display: block;
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-light);
+    margin-bottom: 0.35rem;
+  }
+
+  .contact__detail-value {
+    color: var(--color-text);
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  .contact__hours {
+    border-collapse: collapse;
+    font-size: var(--fs-small);
+  }
+
+  .contact__hours td {
+    padding: 0.2rem 1rem 0.2rem 0;
+  }
+
+  .contact__hours td:first-child {
+    font-weight: 700;
+    min-width: 100px;
+  }
+
+  .contact__hours-closed {
+    color: var(--color-text-light);
+  }
+
+  .contact__map {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    height: 250px;
+  }
+
+  .contact__map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    .contact__grid {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+
+    .contact__map {
+      height: 420px;
+    }
+
+    .btn--phone {
+      width: auto;
+    }
+
+    .contact__cta-block {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .contact {
+      padding: var(--space-xxl) 0;
+    }
+
+    .contact__map {
+      height: 480px;
+    }
+  }
+</style>
